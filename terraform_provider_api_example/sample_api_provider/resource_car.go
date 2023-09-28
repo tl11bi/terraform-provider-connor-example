@@ -48,4 +48,6 @@ func resourceCarCreate(ctx context.Context, d *schema.ResourceData, m interface{
 	var err error
 	if content, ok :=
 	return nil
+
+
 }

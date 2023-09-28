@@ -35,7 +35,7 @@ def cars():
         if result:
             return result, 201
         else:
-            return "404 Already Exists", 403
+            return "403 Already Exists", 403
 
 @app.route("/api/v1/objects/cars/<car_id>", methods=['GET', 'PUT', 'DELETE'])
 def get_cars(car_id):

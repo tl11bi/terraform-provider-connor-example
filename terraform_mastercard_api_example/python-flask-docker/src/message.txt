@@ -82,3 +82,57 @@
 2023-09-27 21:29:46: get_car called
 2023-09-27 21:29:46: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
 2023-09-27 21:29:46: POST /api/v1/objects/cars already exist
+2023-09-27 22:08:41: create_car called
+2023-09-27 22:08:41: get_car called
+2023-09-27 22:08:41: GET /api/v1/objects/cars not found
+2023-09-27 22:08:41: POST /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:08:46: get_car called
+2023-09-27 22:08:46: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:08:46: get_car called
+2023-09-27 22:08:46: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:14: get_car called
+2023-09-27 22:09:14: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:14: get_car called
+2023-09-27 22:09:14: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:17: update_car called
+2023-09-27 22:09:17: PUT /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:39: get_car called
+2023-09-27 22:09:39: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:39: get_car called
+2023-09-27 22:09:39: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:42: get_car called
+2023-09-27 22:09:42: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:42: get_car called
+2023-09-27 22:09:42: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:48: get_car called
+2023-09-27 22:09:48: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:09:48: get_car called
+2023-09-27 22:09:48: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:10:29: get_car called
+2023-09-27 22:10:29: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:10:29: get_car called
+2023-09-27 22:10:29: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:10:34: create_car called
+2023-09-27 22:10:34: get_car called
+2023-09-27 22:10:34: GET /api/v1/objects/cars not found
+2023-09-27 22:10:34: POST /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:10:48: get_car called
+2023-09-27 22:10:48: get_car called
+2023-09-27 22:10:48: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:10:48: GET /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:10:48: get_car called
+2023-09-27 22:10:48: get_car called
+2023-09-27 22:10:48: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:10:48: GET /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:11:25: get_car called
+2023-09-27 22:11:25: get_car called
+2023-09-27 22:11:25: GET /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:11:25: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:11:25: get_car called
+2023-09-27 22:11:25: get_car called
+2023-09-27 22:11:25: GET /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:11:25: GET /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
+2023-09-27 22:11:33: delete_car called
+2023-09-27 22:11:33: delete_car called
+2023-09-27 22:11:33: DELETE /api/v1/objects/cars{'id': '6666', 'make': 'honda', 'module': 'gsll', 'year': '2020'}
+2023-09-27 22:11:33: DELETE /api/v1/objects/cars{'id': '55555', 'make': 'mazda', 'module': 'mz3gt', 'year': '2018'}
