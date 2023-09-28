@@ -37,5 +37,5 @@ resource "restapi_object" "Foo2" {
   read_method = "GET"
   update_method = "PUT"
   destroy_method = "DELETE"
-  data = "{ \"id\": \"55555\", \"first\": \"Foo\", \"last\": \"Bar\" }"
+  data = "{ \"id\": \"55555\", \"make\": \"mazda\",  \"module\": \"mz3gt\", \"year\": \"2018\" }"
 }

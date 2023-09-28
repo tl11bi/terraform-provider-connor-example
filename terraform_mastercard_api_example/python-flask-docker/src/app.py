@@ -1,10 +1,10 @@
-from datetime import datetime
-
 from flask import Flask, render_template, request
+from cars import Cars
 import socket
 
 app = Flask(__name__)
 
+all_cars = Cars()
 
 @app.route("/")
 def index():
@@ -26,56 +26,32 @@ def get_all_actions():
 def health():
     return "OK"
 
-# @app.route("/api/v2/objects/cars/<car_id>")
-# def search_cars():
-#     print(request.args.get('car_id'))
-#     # if request.method == 'GET':
-#     #     return get_car(car_id=request.args.get('car_id'))
 
-@app.route("/api/v1/objects/cars/<cars>", methods=['GET', 'POST', 'PUT', 'DELETE'])
-def cars(cars):
-    # get the user posted data
-    json_data = request.get_json()
-    if request.method == 'GET':
-        return get_car(car_id=cars)
+@app.route("/api/v1/objects/cars/", methods=['POST'])
+def cars():
     if request.method == 'POST':
-        return create_car(json_data)
+        request_data = request.get_json()
+        result = all_cars.create_car(id=request_data['id'], make=request_data['make'], module=request_data['module'], year=request_data['year'])
+        if result:
+            return result, 201
+        else:
+            return "404 Already Exists", 403
+
+@app.route("/api/v1/objects/cars/<car_id>", methods=['GET', 'PUT', 'DELETE'])
+def get_cars(car_id):
+    result = None
+    if request.method == 'GET':
+        print(car_id)
+        result = all_cars.get_car(id=car_id)
     elif request.method == 'PUT':
-        return update_car()
+        request_data = request.get_json()
+        result = all_cars.update_car(id=car_id, make=request_data['make'], module=request_data['module'], year=request_data['year'])
     elif request.method == 'DELETE':
-        return delete_car()
-
-
-
-
-
-# following functions write the message and append to a file
-def write_message(message):
-    with open('message.txt', 'a') as f:
-        # write the message with time stamp
-        f.write(datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ': ' + message + '\n')
-
-
-def get_car(car_id):
-    write_message("GET /api/v1/objects/cars" + str(car_id))
-    return "{'first': 'Foo', 'last': 'Bar'}"
-
-
-def create_car(json_data):
-    write_message("POST /api/v1/objects/cars" + str(json_data))
-
-    return json_data
-
-
-def update_car():
-    write_message("PUT /api/v1/objects/cars")
-    return "{'message': 'Car updated'}"
-
-
-def delete_car():
-    write_message("DELETE /api/v1/objects/cars")
-    return "{'message': 'Car deleted'}"
-
+        result = all_cars.delete_car(id=car_id)
+    if result:
+        return result, 201
+    else:
+        return "404 Not Found", 404
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)

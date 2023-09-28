@@ -2,8 +2,7 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/mastercard/restapi" {
-  version     = "1.18.2"
-  constraints = "1.18.2"
+  version = "1.18.2"
   hashes = [
     "h1:J53bO4P8r4UY++0y49wWQBM5McO6GW/Y5jKdhMBcSuo=",
     "zh:0544dc6cf5fd8d6270a8afcc2a14b64e3d89f6b9933e89d97a187746a12e0c89",
